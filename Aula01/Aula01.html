@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Demonstração de Funções HTML</title>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Demonstração de Funções HTML Básicas</h1>
+        <nav>
+            <a href="#texto">Texto</a> |
+            <a href="#listas">Listas</a> |
+            <a href="#links">Links</a> |
+            <a href="#imagens">Imagens</a> |
+            <a href="#tabelas">Tabelas</a> |
+            <a href="#formularios">Formulários</a>
+        </nav>
+    </header>
+
+    <!-- Seção de Texto -->
+    <section id="texto">
+        <h2>Elementos de Texto</h2>
+        <p>Este é um parágrafo comum. <strong>Texto em negrito</strong> e <em>texto em itálico</em>.</p>
+        <p>Quebra de linha<br>usando a tag &lt;br&gt;.</p>
+        <hr>
+        <h3>Cabeçalho nível 3</h3>
+        <h4>Cabeçalho nível 4</h4>
+        <h5>Cabeçalho nível 5</h5>
+        <h6>Cabeçalho nível 6</h6>
+    </section>
+
+    <!-- Seção de Listas -->
+    <section id="listas">
+        <h2>Listas</h2>
+        <h3>Lista Ordenada</h3>
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+
+        <h3>Lista Não Ordenada</h3>
+        <ul>
+            <li>Item A</li>
+            <li>Item B
+                <ul>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                </ul>
+            </li>
+            <li>Item C</li>
+        </ul>
+    </section>
+
+    <!-- Seção de Links -->
+    <section id="links">
+        <h2>Links</h2>
+        <p>Visite o <a href="https://www.google.com">Google</a> (link externo)</p>
+        <p><a href="contato.html">Página de contato</a> (link relativo)</p>
+        <p><a href="https://www.google.com" target="_blank">Abre em nova aba</a></p>
+        <a href="#">
+            <img src="https://via.placeholder.com/100x30" alt="Exemplo de link com imagem" width="100" height="30">
+        </a>
+    </section>
+
+    <!-- Seção de Imagens -->
+    <section id="imagens">
+        <h2>Imagens</h2>
+        <img src="https://picsum.photos/200/150" alt="Imagem aleatória" width="200" height="150">
+        <p>Legenda para imagem exemplo</p>
+    </section>
+
+    <!-- Seção de Tabelas -->
+    <section id="tabelas">
+        <h2>Tabelas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>João</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Seção de Formulários -->
+    <section id="formularios">
+        <h2>Formulários</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required><br><br>
+
+            <label>Gênero:</label>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br><br>
+
+            <label>Interesses:</label>
+            <input type="checkbox" id="tech" name="interesses" value="tech">
+            <label for="tech">Tecnologia</label>
+            <input type="checkbox" id="esportes" name="interesses" value="esportes">
+            <label for="esportes">Esportes</label><br><br>
+
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+                <option value="br">Brasil</option>
+                <option value="eua">EUA</option>
+                <option value="pt">Portugal</option>
+            </select><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+</body>
+</html>
