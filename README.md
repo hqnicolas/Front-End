@@ -4,4 +4,4 @@ Repositório dedicado ao armazenamento e organização de atividades acadêmicas
 
 ### Revisão
 
-- [Link](/aula01) Introdução ao Front End
+- [Link](/Aula01) Introdução ao Front End
