@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: white;
+    color: blue;
+    text-align: center;
+  }
+  
+  .minha_classe {
+    color: purple;
+    text-align: center;
+  }
+  
+  #meu_id {
+    color: yellow;
+    text-align: center;
+  }
+
+  h1 {
+    color: red;
+    text-align: center;
+  }
+  
+  h5 {
+    color: blue;
+    text-align: center;
+  }
+  
