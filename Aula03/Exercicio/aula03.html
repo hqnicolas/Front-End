@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Email</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Cadastro</h1>
+    <!-- Campos -->
+    <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone"
+               pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"
+               placeholder="(11) 91234-5678" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+               placeholder="seuemail@exemplo.com"
+               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+               required>
+    <!-- radio -->
+    <fieldset>
+        <legend>Time do torcedor:</legend>
+
+        <label>
+            <input type="radio" name="time" value="Criciúma" required>
+            Criciúma
+        </label>
+
+        <label>
+            <input type="radio" name="time" value="Próspera">
+            Próspera
+        </label>
+
+        <label>
+            <input type="radio" name="time" value="Caravaggio">
+            Caravaggio
+        </label>
+    </fieldset>
+
+    <!-- Arquivos -->
+    <label for="arquivo">Enviar arquivo:</label>
+    <input type="file" id="arquivo" name="arquivo" accept=".jpg,.jpeg,.png,.pdf">
+
+    <!-- Select múltiplo -->
+    <label for="produtos">Selecione os produtos de informática:</label>
+    <select id="produtos" name="produtos[]" multiple size="5" required>
+        <option value="notebook">Notebook</option>
+        <option value="mouse">Mouse</option>
+        <option value="teclado">Teclado</option>
+        <option value="monitor">Monitor</option>
+        <option value="impressora">Impressora</option>
+    </select>
+
+    <!-- botôes -->
+    <div class="botoes">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </div>
+    </form>
+
+</body>
+</html>

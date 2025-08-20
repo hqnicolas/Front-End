@@ -1,0 +1,85 @@
+.minha_div {
+    background-color: blue;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+    border: 20px solid red;
+
+}
+
+.minha_div2 {
+    background-color: rgb(31, 222, 133);
+    height: 200px;
+    width: 150px;
+    padding: 30px;
+    margin: 50px;
+}
+
+h5 {
+    color: blue;
+    text-align: center;
+}
+
+.minha_classe {
+    color: rgb(107, 6, 230);
+    font-size: large;
+    text-align: center;
+
+    p {
+        color: azure;
+    }
+
+    background-image: url(https://media.licdn.com/dms/image/v2/D4D03AQF8rhUgufIKzw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1726768342318?e=2147483647&v=beta&t=72kB6qdNAVbbtpWhOY_J6Z7LUBT92Vqp_iKiJmLLLZs);
+}
+
+#meu_id1 {
+    color: rgba(107, 6, 230, 0.5);
+}
+
+#meu_id2 {
+    color: #0db890;
+}
+
+p {
+    text-transform: uppercase;
+    background-color: bisque;
+    font-size: x-large;
+    display: inline-block;
+}
+
+.minha_font {
+    font-family: sans-serif;
+}
+
+.position_fixed {
+    background-color: yellow;
+    position: fixed;
+    top: 50px;
+    left: 100px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: 2px solid red;
+}
+
+.box-1 {
+    background-color: red;
+    position: relative;
+    z-index: 1;
+}
+
+.box-2 {
+    background-color: rgba(0, 0, 255, 0.45);
+    position: relative;
+    top: -40px;
+    z-index: 3;
+}
+
+.box-3 {
+    background-color: green;
+    position: relative;
+    top: -80px;
+    z-index: 2;
+}
