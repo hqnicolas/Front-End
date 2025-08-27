@@ -1,0 +1,73 @@
+/* Configuração básica do layout usando Flexbox */
+.area-principal {
+  display: flex;
+  flex-direction: row; /* Organização inicial em linha */
+  justify-content: space-around; /* Distribuição com espaço ao redor */
+  align-items: stretch; /* Alinha os itens ao esticar */
+  gap: 20px; /* Espaçamento entre blocos */
+  flex-wrap: wrap; /* Quebra linha em telas menores */
+  padding: 20px;
+}
+
+/* Estilo para os blocos */
+.bloco {
+  flex: 1 1 150px; /* flex-grow:1, flex-shrink:1, flex-basis:150px */
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Cores distintas para cada bloco */
+#bloco1 {
+  background-color: #e74c3c; /* Vermelho */
+  order: 2; /* Ordem inicial */
+}
+
+/* Modifica a ordem no modo landscape */
+@media screen and (orientation: landscape) {
+  #bloco1 {
+    order: 3; /* Altera a ordem na orientação paisagem */
+  }
+}
+
+/* Responsividade para telas até 600px */
+@media screen and (max-width: 600px) {
+  .area-principal {
+    flex-direction: column; /* Empilha os blocos verticalmente */
+    justify-content: center;
+  }
+  #bloco1 {
+    align-self: flex-start; /* Alinha individualmente o bloco */
+  }
+}
+
+/* Para telas maiores que 1024px */
+@media screen and (min-width: 1024px) {
+  .area-principal {
+    flex-direction: row-reverse; /* Inverte a direção da linha */
+    justify-content: space-between;
+  }
+  /* Ajusta o crescimento de alguns blocos */
+  #bloco2 {
+    flex-grow: 3; /* Bloco 2 cresce mais */
+    flex-basis: 200px;
+  }
+  /* Modificar a posição de um bloco específico */
+  #bloco3 {
+    align-self: flex-end; /* Alinha individualmente na vertical */
+  }
+}
+
+/* Estilo adicional para facilitar visualização */
+#bloco2 {
+  background-color: #3498db; /* Azul */
+}
+
+#bloco3 {
+  background-color: #2ecc71; /* Verde */
+}
