@@ -1,7 +1,3 @@
-Aqui está o conteúdo formatado em **Markdown** para o **GitHub**.
-
------
-
 # FRONT-END
 
 ## Aula 06 – JavaScript I
