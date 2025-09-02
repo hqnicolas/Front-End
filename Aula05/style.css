@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+}
+
+h1 {
+    color: #333;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #008cba;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    background-color: #005f5f;
+}

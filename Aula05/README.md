@@ -6,8 +6,6 @@ Aqui está o conteúdo formatado em **Markdown** para o **GitHub**.
 
 ## Aula 06 – JavaScript I
 
-**Prof. Thyerri**
-
 ### JavaScript: Introdução
 
   * JavaScript é uma linguagem de script orientada a objetos usada para tornar páginas Web interativas (animações complexas, botões clicáveis, pop-up, etc.);
