@@ -7,6 +7,9 @@
 
 ### DOM: Estrutura em forma de árvore
 
+<img width="800" height="828" alt="image" src="https://github.com/user-attachments/assets/5d4fd01e-9fa5-4889-bd8e-01cdb316f098" />
+
+
 ```html
 <body>
     <h1 id="title">Blog</h1>
