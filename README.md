@@ -9,3 +9,4 @@ Repositório dedicado ao armazenamento e organização de atividades acadêmicas
 - [Link](/Aula03) Guia de Formulários em HTML
 - [Link](/Aula04) Responsividade e Flexbox
 - [Link](/Aula05) JavaScript: Introdução
+- [Link](/Aula06) JavaScript: Document Object Model
