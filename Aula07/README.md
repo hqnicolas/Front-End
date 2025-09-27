@@ -14,7 +14,7 @@
 
 ## Protocolos
 
-### WEP (Wired Equivalent Privacy)
+### [WEP (Wired Equivalent Privacy)](https://github.com/hqnicolas/Front-End/blob/main/Aula07/Wep.md)
 
 O WEP foi criado em 1997 e foi a primeira tentativa de proteção sem fio, criptografando os dados a fim de que, se fossem interceptados, estariam irreconhecíveis.
 
@@ -109,7 +109,7 @@ Apesar da conveniência, o WPS possui sérias vulnerabilidades, principalmente r
 
 ## Segurança em Redes Corporativas
 
-### Autenticação WPA2/WPA3-Enterprise
+### [Autenticação WPA2/WPA3-Enterprise](https://github.com/hqnicolas/Front-End/blob/main/Aula07/Wpa.md)
 
 Diferente do modo *Personal (PSK)*, o modo *Enterprise* não usa uma única senha. Cada usuário é autenticado individualmente através de um servidor de autenticação, como o **RADIUS**.
 
@@ -127,7 +127,7 @@ Diferente do modo *Personal (PSK)*, o modo *Enterprise* não usa uma única senh
 
 ---
 
-## Principais Vulnerabilidades em Redes Sem Fio
+## [Principais Vulnerabilidades em Redes Sem Fio](https://github.com/hqnicolas/Front-End/blob/main/Aula07/EvilTwin.md)
 
 | Vulnerabilidade         | Descrição                                                                                             |
 | ----------------------- | ----------------------------------------------------------------------------------------------------- |
