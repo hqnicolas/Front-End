@@ -114,6 +114,23 @@ return (
 > 2. Este novo componente deve conter duas `props`: `name` e `category`.
 > 3. Faça duas chamadas deste componente no componente principal passando diferentes valores de `props` para cada um.
 
+```
+function ProductComponent(props) {
+  return (
+    <div>
+      <p>Produto: {props.name} - Descrição: {props.category}</p>
+    </div>
+  )
+}
+
+export default ProductComponent
+```
+
+```
+<ProductComponent name='Arroz' category='Alimento' />
+<ProductComponent name='Martelo' category='Ferramenta' />
+```
+
 ---
 
 ## Props de forma desestruturada
@@ -124,6 +141,23 @@ return (
 > #### PRÁTICA:
 > 1. Reescreva o `ProductComponent.jsx` e passe as `props` de forma desestruturada: `{ name, category }`.
 > 2. Verifique seu funcionamento e faça uma comparação com o método anterior.
+
+```
+function ProductComponent({name, category}) {
+  return (
+    <div>
+      <p>Produto: {name} - Descrição: {category}</p>
+    </div>
+  )
+}
+
+export default ProductComponent
+```
+
+```
+<ProductComponent name='Arroz' category='Alimento' />
+<ProductComponent name='Martelo' category='Ferramenta' />
+```
 
 ---
 
@@ -136,6 +170,26 @@ return (
 > 3. Crie um componente no seguinte formato: `PostComponent( { title, description } )`.
 > 4. Faça a renderização dinâmica do componente de acordo com cada elemento do array.
 
+```
+export default function PostComponent({ title, description }) {
+  return (
+    <div>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <hr />
+    </div>
+  )
+}
+```
+
+```
+<div>
+  {listPosts.map((post) => (
+    <PostComponent key={post.id} title={post.title} description={post.description} />
+  ))}
+</div>
+```
+
 ---
 
 ## `children` prop
@@ -145,6 +199,36 @@ return (
 > #### PRÁTICA:
 > 1. Crie um novo componente no formato: `GenericComponent( { children } )`.
 > 2. Faça duas chamadas dele no componente principal, sendo que em cada chamada deverá ser passado conteúdo HTML diferente para ele.
+
+```
+export default function GenericComponent({ children }) {
+  return (
+    <div>
+      <h3>HTML passado pelo componente pai</h3>
+      { children }
+    </div>
+  )
+}
+```
+
+```
+<div>
+  <GenericComponent>
+    <p>Eu sou o primeiro conteúdo fornecido pelo componente pai</p>
+    <hr />
+  </GenericComponent>
+</div>
+<div>
+  <GenericComponent>
+    <p>Eu sou o segundo conteúdo fornecido pelo componente pai</p>
+    <ul>
+      <li>Item 01</li>
+      <li>Item 02</li>
+    </ul>
+    <hr />
+  </GenericComponent>
+</div>
+```
 
 ---
 
@@ -161,11 +245,57 @@ return (
 > 3. Crie uma função que incrementa um contador a cada evento de `click`.
 > 4. Faça a utilização deste componente e verifique seu comportamento.
 
+```
+import { useState } from 'react'
+
+function MyButtonComponent() {
+  const [counter, setCounter] = useState(0);
+
+  const addCounterOnClick = () => setCounter(counter + 1);
+
+  return (
+    <button onClick={addCounterOnClick}>
+      Clicou {counter} vezes
+    </button>
+  )
+}
+
+export default MyButtonComponent
+```
+
 > #### PRÁTICA 02:
 > 1. Crie um novo componente chamado `UseStateComponente1.jsx`.
 > 2. Crie dois `states`. Exemplo: `value1` e `value2`.
 > 3. Crie uma função de incremento e decremento para cada `state`.
 > 4. Mostre como resultado a mudança de valores de cada `state` e o produto entre eles.
+
+```
+function UseStateComponente1() {
+  const [value1, setValue1] = useState(1);
+  const [value2, setValue2] = useState(1);
+
+  const increaseValue1 = () => setValue1(value1 + 1);
+  const decreaseValue1 = () => setValue1(value1 - 1);
+
+  const increaseValue2 = () => setValue2(value2 + 1);
+  const decreaseValue2 = () => setValue2(value2 - 1);
+
+  return (
+    <>
+      <hr />
+      <p>Exercício 1: useState</p>
+      <p>{value1}</p>
+      <button onClick={decreaseValue1}>-</button>
+      <button onClick={increaseValue1}>+</button>
+      <hr />
+      <p>{value2}</p>
+      <button onClick={decreaseValue2}>-</button>
+      <button onClick={increaseValue2}>+</button>
+      <p>Resultado: {value1} * {value2} = {value1 * value2}</p>
+    </>
+  )
+}
+```
 
 ---
 
