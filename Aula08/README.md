@@ -1,6 +1,5 @@
 ---
 
-## Conteúdo
 - Renderização condicional de componentes;
 - Renderização de listas;
 - Props de componentes;
