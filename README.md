@@ -10,4 +10,5 @@ Repositório dedicado ao armazenamento e organização de atividades acadêmicas
 - [Link](/Aula04) Responsividade e Flexbox
 - [Link](/Aula05) JavaScript: Introdução
 - [Link](/Aula06) JavaScript: Document Object Model
-- [Link](/Aula07) JavaScript: React.js 
+- [Link](/Aula07) JavaScript: React.js
+- [Link](/Aula08) JavaScript: React2.js
