@@ -17,6 +17,28 @@
 > 1. Crie dois novos componentes: `ConditionalComponent1.jsx` e `ConditionalComponent2.jsx`.
 > 2. Dentro do componente principal, crie uma `<div>` e dentro dela aplique a renderização condicional dos dois componentes.
 
+```
+function App() {
+  let component;
+  let condition = true;
+  if(condition) {
+    component = <ConditionalComponent1 />
+  } else {
+    component = <ConditionalComponent2 />
+  }
+
+  return (
+    <>
+      {component}
+
+      <div>
+        {condition ? <ConditionalComponent1 /> : <ConditionalComponent2 />}
+      </div>
+    </>
+  )
+}
+```
+
 ---
 
 ## Renderização de lista
@@ -29,6 +51,54 @@
 > 3. Faça com que para cada elemento mapeado, seja criado um item de lista `<li>`.
 >
 > *Obs: Essa técnica pode ser aplicada em listas (não ordenadas e ordenadas), tabelas e componentes.*
+
+```
+const products = [
+  { id: 1, name: 'Laranja' },
+  { id: 2, name: 'Uva' },
+  { id: 3, name: 'Maçã' },
+];
+
+// PRIMEIRA FORMA
+const listItems = products.map(product =>
+  <li key={product.id}>
+    {product.name}
+  </li>
+);
+return (
+  <>
+    <ul>
+      {listItems}
+    </ul>
+
+    {/* SEGUNDA FORMA */}
+    <ul>
+      {products.map((prod) => (
+        <li key={prod.id}>{prod.name}</li>
+      ))}
+    </ul>
+  </>
+)
+```
+
+```
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    {products.map((prod) => (
+      <tr key={prod.id}>
+        <td>{prod.id}</td>
+        <td>{prod.name}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+```
 
 ---
 
