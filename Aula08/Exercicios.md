@@ -10,6 +10,8 @@
     </div>
     ```
 
+Rta.: <Component2 />
+
 2.  **Desenhe o conteúdo gerado pelo trecho de código abaixo:**
     ```
     const carros = [
@@ -23,9 +25,18 @@
     ))}
     ```
 
+Rta.: 
+| Marca | Modelo | Ano  |
+|-------|--------|------|
+| Volks | Fox    | 2018 |
+| Fiat  | Siena  | 2015 |
+| GM    | Celta  | 2014 |
+
 3.  **Qual a funcionalidade das `props` de componente?**
+Rta.: props vai passar dados de um pai para um componente filho
 
 4.  **Qual componente deve ser responsável pela passagem das `props` (o pai ou o filho)?**
+Rta.: Responsabilidade do  pai
 
 5.  **Como deve ser a chamada do componente descrito pelo trecho de código abaixo?**
     ```
@@ -37,6 +48,13 @@
       )
     }
     ```
+Rta.: 
+<MyProfile 
+  name="João Silva" 
+  email="joao@example.com" 
+  job="Desenvolvedor Front-end" 
+/>
+
 
 6.  **O que o trecho de código abaixo produzirá na tela do navegador?**
     ```
@@ -44,12 +62,20 @@
 
     {array.map((arr) => ())}
     ```
+Rta.: nada na tela do navegador
 
 7.  **Qual a funcionalidade da `children` prop?**
+Rta.: acessar o conteúdo entre as tags
 
 8.  **Considere 3 componentes, um avô, um pai e um filho. O avô deseja escolher o nome do filho sem que o pai saiba (o componente pai apenas repassa a informação). Descreva como seria a chamada dos três componentes utilizando `props`, considerando a transmissão da informação desejada.**
 
+Rta.:
+O Avo passa nome Lucas para o Pai, o Pai apenas repassa props.nome para o Filho, sem saber o conteúdo usa a prop normalmente.
+
 9.  **Qual a funcionalidade do hook `useState`?**
+
+Rta.:
+Ele retorna um array com dois valores, o estado atual, uma função para atualizar esse estado
 
 10. **Com base no trecho de código abaixo, qual a mensagem descrita na tag `<p>` *após* o clique no botão?**
     ```jsx
@@ -70,6 +96,8 @@
     }
     ```
 
+Rta.: A cor atual é: white
+
 11. **Complete o trecho de código abaixo para renderizar uma lista de produtos dentro de uma tabela HTML.**
     ```
     {productsList.map((prod) => (
@@ -79,6 +107,25 @@
       </tr>
     ))}
     ```
+ Rta.:
+ ```
+ <table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+    </tr>
+  </thead>
+  <tbody>
+    {productsList.map((prod) => (
+      <tr key={prod.id}>
+        <td>{prod.id}</td>
+        <td>{prod.name}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+ ```   
 
 12. **Deseja-se que um componente possua duas `props`: `title` e `description`. Complete o trecho de código na área tracejada de forma que as `props` sejam mostradas corretamente na chamada deste componente.**
     ```
@@ -91,3 +138,12 @@
       )
     }
     ```
+
+Rta.:
+```
+<MyComponent 
+  title="Titulo Top baguarai" 
+  description="o título é bom mas a descrição não" 
+/>
+```
+
