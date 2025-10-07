@@ -1,4 +1,4 @@
-# Exercícios: Postar no AVA
+# Exercícios:
 
 1.  **Deseja-se aplicar CSS global a todos os elementos do projeto. Em qual arquivo da aplicação deve-se estilizar os elementos?**
 
