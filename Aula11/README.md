@@ -1,5 +1,3 @@
-# React.js Parte 05: FRONT-END
-
 ## Protocolos de Comunicação: HTTP
 
 O **Hyper Text Transfer Protocol (HTTP)** é o protocolo que permite o intercâmbio de informações pela internet. Ele funciona em um modelo Cliente-Servidor:
